@@ -6,6 +6,17 @@
     </ul>
 </nav>
 
+--------------Tạo file đuôi "js" để nhúng cho thanh taskbar hiển thị trong tất cả các trang--------------------------------------------------------------------------
+fetch("nav.html") //tên file file taskbar
+    .then(Response  => Response.text())
+    .then(data =>{
+        document.getElementById("nav-placeholder").innerHTML = data;
+    })
+
+--------------File muốn nhúng thanh taskbar--------------------------------------------------------------------------
+<div id="nav-placeholder"></div>
+<script src="nav.js"></script>
+
 --------------CSS trang trí cho "nav"--------------------------------------------------------------------------
 nav {
     background-color: #333; /* Màu nền đen */
