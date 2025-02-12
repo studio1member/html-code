@@ -1,0 +1,6 @@
+git lfs install  # Cài đặt Git LFS
+git lfs track "*.mp4"  # Theo dõi tất cả file MP4
+git add .gitattributes  # Thêm cấu hình LFS vào Git
+git add videos/video.mp4  # Thêm video vào Git
+git commit -m "Thêm video vào dự án"
+git push origin main  # Đẩy lên GitHub
